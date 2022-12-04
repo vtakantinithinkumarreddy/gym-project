@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root{
+	--primary-color: #ff1313;
+	--secondary-color: #fff;
+	--font: 'Oswald', sans-serif;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--font);
+}
+body{
+	background: #000;
+}
+header{
+	position: absolute;
+	width: 100%;
+	height: 120px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.logo{
+	color: var(--secondary-color);
+	font-size: 40px;
+}
+.nav-menu{
+	display: flex;
+	align-items: left;
+	list-style: none;
+	text-align:center;
+}
+.nav-menu a{
+	margin: 01.15rem;
+	color: var(--secondary-color);
+	font-weight: 500;
+	font-size: 18px;
+	transition: .3s;
+	text-transform: uppercase;
+	text-decoration: underline transparent;
+	margin-left:15px;
+}
+.nav-menu a:hover{
+	text-decoration-color: var(--secondary-color);
+}
+.contactBTn{
+	padding: 26px 44px;
+}
+.hero-section{
+	height: 100vh;
+	width: 100%;
+	background-image: url(hero.png.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	background-attachment: fixed;
+}
+.hero-intro{
+	position: absolute;
+	top: 35%;
+	left: 10%;
+	height: 400px;
+}
+.hero-intro h2{
+	font-size: 60px;
+	font-weight: 700;
+	display: inline-block;
+	position: relative;
+	text-transform: uppercase;
+	-webkit-text-stroke: 1px #f6f7f8;
+	-webkit-text-fill-color: transparent;
+	line-height: 1.2;
+	right:-125px;
+}
+.course-sec{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.course-sec .course-card{
+	width: 50%;
+	position: relative;
+}
+.course-sec .course-card img{
+	width: 100%;
+	height: 100%;
+}
+.course-sec .course-card .course-intro{
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	z-index: 2;
+	width: 80%;
+	color: var(--secondary-color);
+	text-align: center;
+}
+.course-intro .course-title{
+	font-size: 50px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.course-intro p{
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+	font-size: 18px;
+	letter-spacing: 1px;
+	margin-bottom: 3rem;
+}
+.offer-sec{
+	padding: 2rem 0;
+}
+
+.section-title{
+	text-align: center;
+	font-size: 140px;
+	display: block;
+	color: #2c234d;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+	-webkit-text-stroke: 1px #f6f7f8;
+	-webkit-text-fill-color: transparent;
+	padding: 2px 0;
+}
+.offer-sec .offer-row{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.offer-row .offer-card{
+	margin: 0 1rem;
+	width: 350px;
+}
+.offer-row .offer-card .offer-intro{
+	color: var(--secondary-color);
+	text-align: center;
+}
+.offer-card .offer-intro h2{
+	font-size: 30px;
+	font-weight: 500;
+	margin: 14px 0;
+	text-transform: uppercase;
+}
+.offer-card .offer-intro p{
+	font-size: 16px;
+	width: 90%;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	letter-spacing: 1px;
+	font-family: 'Roboto', sans-serif;
+}
+.about-sec{
+	display: flex;
+	justify-content: center;
+	padding: 5rem 0;
+	background: #34495e;
+	margin-top: 2rem;
+}
+.about-card{
+	width: 40%;
+	margin: 0 1rem;
+}
+.about-card img{
+	width: 100%;
+	height: 100%;
+}
+.about-intro{
+	padding: 0 2rem;
+	color: var(--secondary-color);
+}
+.about-intro h1{
+	text-transform: uppercase;
+	font-size: 70px;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+.about-intro p{
+	letter-spacing: 2px;
+	text-align: left;
+	margin-bottom: 3rem;
+	font-size: 18px;
+	line-height: 25px;
+	font-family: 'Roboto', sans-serif;
+}
+.blog-row{
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+}
+.blog-card{
+	overflow: hidden;
+	transition: .3s;
+}
+.blog-card img{
+	transition: .3s;
+}
+.blog-card:hover img{
+	transform: scale(1.1);
+}
+.blog-card .blog-intro{
+	padding: 2rem 1rem;
+	color: #fff;
+}
+.blog-intro p{
+	margin-bottom: 1rem;
+}
+.blog-intro a{
+	color: var(--secondary-color);
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: .3s;
+}
+.blog-intro a:hover{
+	color: var(--primary-color);
+	text-decoration: underline;
+}
+footer{
+	margin-top: 4rem;
+	padding: 3rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	background: #34495e;
+}
+.copyright{
+	font-size: 20px;
+	color: #fff;
+	letter-spacing: 2px;
+}
+.copyright span{
+	color: red;
+	font-size: 30px;
+	margin-left: 1rem;
+}
+.social-icon{
+	display: flex;
+	gap: 1rem;
+}
+.social-icon i{
+	font-size: 20px;
+	padding: 5px 11px;
+	color: #fff;
+	background: blueviolet;
+	transition: .3s;
+	cursor: pointer;
+}
+.social-icon i:hover{
+	background: var(--primary-color);
+}
+
+.open-button {
+  background-color: red;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: relative;
+  bottom: 8px;
+  right: -42px;
+  width: 170px;
+
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 270px;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=numeric] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
